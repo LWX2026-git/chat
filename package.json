@@ -1,0 +1,24 @@
+{
+  "name": "xiaozhi-chatroom-mcp",
+  "version": "1.0.0",
+  "description": "Xiaozhi AI MCP Server for Chatroom",
+  "type": "module",
+  "main": "build/index.js",
+  "bin": {
+    "xiaozhi-chatroom-mcp": "build/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node build/index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.3.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
