@@ -47,7 +47,7 @@ server.setRequestHandler(ListToolsRequestSchema, async () => {
 
 server.setRequestHandler(CallToolRequestSchema, async (request) => {
   if (request.params.name === "send_chat_message") {
-    const message = request.params.arguments.message as string;
+    const message = (request.params.arguments?.message as string) || "";
     
     try {
       const params = new URLSearchParams({
@@ -93,4 +93,3 @@ async function main() {
 }
 
 main().catch(console.error);
-
