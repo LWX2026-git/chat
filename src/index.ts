@@ -32,7 +32,7 @@ server.setRequestHandler(ListToolsRequestSchema, async () => {
         description: "向聊天室发送消息，可以让小智AI在聊天室中发言",
         inputSchema: {
           type: "object",
-          properties": {
+          properties: {
             message: {
               type: "string",
               description: "要发送到聊天室的消息内容",
